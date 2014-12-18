@@ -5,7 +5,7 @@ MAINTAINER joel.hermanns@gmail.com
 # Create default config
 RUN cabal update
 # Add stackage remote repo
-RUN sed -i 's/^remote-repo: [a-zA-Z0-9_\/:.]*$/remote-repo: stackage:http:\/\/www.stackage.org\/stackage\/nightly/g' .cabal/config
+RUN sed -i 's/^remote-repo: [a-zA-Z0-9_\/:.]*$/remote-repo: stackage:http:\/\/www.stackage.org\/nightly/g' .cabal/config
 # Update packages
 RUN cabal update
 # Generate locale otherwise happy (because of tf-random) will fail
