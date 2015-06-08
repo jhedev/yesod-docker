@@ -9,7 +9,7 @@ To use as development environment run:
 $ docker run -it -v `pwd`:/code jhedev/yesod-docker bash
 ```
 
-(The `latest` version currently uses an exclusive stackage snapshot from [2014-11-01](http://www.stackage.org/snapshot/ghc782014-11-01exclusive).)
+(The `latest` version currently uses a nightly stackage snapshot from [2015-06-02](http://www.stackage.org/nightly-2015-06-02).)
 
 To use the [nightly snapshot](http://www.stackage.org/nightly) run:
 
